@@ -12,7 +12,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @book.category_id %>
+  <%= @book.category_name unless @book.category.nil? %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
