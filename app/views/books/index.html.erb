@@ -17,7 +17,7 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.description %></td>
-        <td><%= book.category_name unless book.category.nil? %></td>
+        <td><%= book.category.name unless book.category.nil? %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
